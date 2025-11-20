@@ -333,6 +333,21 @@
             position: relative;
             overflow: hidden;
             contain: layout style;
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .feature-card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .feature-card-link:hover .feature-card {
+            transform: translateY(-10px);
+            border-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
 
         .feature-card::before {
@@ -350,11 +365,6 @@
             left: 100%;
         }
 
-        .feature-card:hover {
-            transform: translateY(-10px);
-            border-color: rgba(255, 255, 255, 0.4);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
 
         .feature-icon {
             font-size: 3rem;
@@ -843,7 +853,7 @@
                 opacity: 0.9;
             }
 
-            .feature-card:active {
+            .feature-card-link:active .feature-card {
                 transform: scale(0.98);
             }
 
@@ -1000,27 +1010,33 @@
 
         <!-- Features Section -->
         <div class="features-section">
-            <div class="feature-card">
-                <div class="feature-image-wrapper">
-                    <img src="imgs/item1.jpg" alt="Tính năng 1" class="feature-image" width="500" height="250" decoding="async" loading="lazy" fetchpriority="low">
+            <a href="https://m.188lux.net/promotion/109" target="_blank" class="feature-card-link" rel="noopener noreferrer">
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="imgs/item1.jpg" alt="Tính năng 1" class="feature-image" width="500" height="250" decoding="async" loading="lazy" fetchpriority="low">
+                    </div>
+                    <h3 class="feature-title">Xổ Số Tỉ Lệ Cao Nhất Thị Trường</h3>
+                    <p class="feature-description">Đăng ký trong vài giây, trải nghiệm ngay lập tức</p>
                 </div>
-                <h3 class="feature-title">Xổ Số Tỉ Lệ Cao Nhất Thị Trường</h3>
-                <p class="feature-description">Đăng ký trong vài giây, trải nghiệm ngay lập tức</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-image-wrapper">
-                    <img src="imgs/item2.jpg" alt="Tính năng 2" class="feature-image" width="500" height="250" decoding="async" loading="lazy" fetchpriority="low">
+            </a>
+            <a href="https://m.188lux.net/promotion/35" target="_blank" class="feature-card-link" rel="noopener noreferrer">
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="imgs/item2.jpg" alt="Tính năng 2" class="feature-image" width="500" height="250" decoding="async" loading="lazy" fetchpriority="low">
+                    </div>
+                    <h3 class="feature-title">Nạp Đầu Trải Nghiệm Quà Khủng</h3>
+                    <p class="feature-description">Nhận ngay phần quà và ưu đãi đặc biệt khi đăng ký</p>
                 </div>
-                <h3 class="feature-title">Nạp Đầu Trải Nghiệm Quà Khủng</h3>
-                <p class="feature-description">Nhận ngay phần quà và ưu đãi đặc biệt khi đăng ký</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-image-wrapper">
-                    <img src="imgs/item3.jpg" alt="Tính năng 3" class="feature-image" width="500" height="250" decoding="async" loading="lazy" fetchpriority="low">
+            </a>
+            <a href="https://m.188lux.net/promotion/59" target="_blank" class="feature-card-link" rel="noopener noreferrer">
+                <div class="feature-card">
+                    <div class="feature-image-wrapper">
+                        <img src="imgs/item3.jpg" alt="Tính năng 3" class="feature-image" width="500" height="250" decoding="async" loading="lazy" fetchpriority="low">
+                    </div>
+                    <h3 class="feature-title">Hoàn Cược Siêu Khủng Lên Đến 5%</h3>
+                    <p class="feature-description">Thông tin được mã hóa và bảo vệ an toàn</p>
                 </div>
-                <h3 class="feature-title">Hoàn Cược Siêu Khủng Lên Đến 5%</h3>
-                <p class="feature-description">Thông tin được mã hóa và bảo vệ an toàn</p>
-            </div>
+            </a>
         </div>
 
         <!-- Trust Badges Section -->
